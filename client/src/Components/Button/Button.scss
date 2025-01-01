@@ -1,0 +1,62 @@
+// src/components/Button/Button.scss
+@import '../../App.scss';
+
+.btn-primary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: $btn-primary-bg-color;
+  color: $btn-primary-color;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($btn-primary-bg-color-hover, 10%);
+    color: $btn-primary-color;
+  }
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: white;
+  color: $btn-primary-color;
+  border: 1px solid $secondary-color;
+
+  &:hover {
+    background-color: white;
+    color: $btn-primary-color;
+    border: 1px solid darken($secondary-color, 10%);
+  }
+}
+
+.small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.btn.show{
+  background: #fff;
+  border: 1px solid $primary-color;
+  color: $text-color;
+}
+.btn-link,
+a.btn-link {
+  background: none;
+  border: none;
+  color: $btn-link-color;
+  font-size: $btn-link-font-size;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: $btn-link-color;
+  }
+}
+
+a:hover {
+  text-decoration: underline !important;
+}

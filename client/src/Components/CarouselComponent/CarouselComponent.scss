@@ -1,0 +1,23 @@
+@import '../../App.scss';
+.overlay {
+    background-color: $overlay-color;
+    z-index: 1;
+  }
+  
+  .carousel {
+    z-index: 2;
+    bottom: 10%;
+    left: 10%;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1 !important;
+  
+    .material-icons {
+      font-size: $slider-icon-size;
+    }
+  }
+  
+  
+  

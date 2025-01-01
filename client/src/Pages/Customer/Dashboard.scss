@@ -1,0 +1,37 @@
+@import '../../App.scss';
+.homepage-search-block,.homepage-search-title h1,.homepage-search-title h5{
+    color: white !important;
+}
+.home-bg{
+    background-image: url("../../assets/images/home-bg.jpeg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.home-bg .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home-search{
+    z-index: 2;
+}
+.dropdown-toggle{
+    padding: 10px;
+    text-align: left;
+}
+.icon-btn,.icon-btn:hover{
+    position: absolute;
+    right: 10px;
+    background: none;
+    top: 8px;
+}
+.icon-btn .material-icons{
+    font-size: 16px;
+}
+.right-10{
+    right: 10px;
+}

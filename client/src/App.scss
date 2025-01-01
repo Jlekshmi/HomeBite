@@ -1,0 +1,334 @@
+//client/src/app.scss
+// Variables
+$font-family: "Comfortaa", sans-serif;
+$background-color: #282c34;
+$primary-color: #FF8A00;
+$secondary-color: #FF4B2B;
+$text-color: #4A4A4A;
+$font-size-base: 14px;
+$logo-size: 40vmin;
+$overlay-color: rgba(0, 0, 0, 0.5);
+$slider-icon-size: 3em;
+$btn-primary-bg-color: #FF8A00;
+$btn-primary-bg-color-hover:#FFAA33;
+$btn-primary-color:#000;
+$btn-primary-font-size: 16px;
+$btn-link-color: #D32F2F;
+$btn-link-font-size: 14px;
+$link-color: #D32F2F;
+$text-size: 14px;
+$border-color:#DDE1E6;
+$homepage-search-block-bg:#EEF0EF;
+$card-bg:#F0FFF4;
+$chef-card: #F8F8F8;
+$header-bg:#F5F5F5;
+$null:0;
+$success-color:#007F00;
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+  line-height: 1.2;
+
+  h1 { font-size: 36px; font-weight: 700; }
+  h2 { font-size: 30px; font-weight: 600; line-height: 1.3; }
+  h3 { font-size: 26px; font-weight: 500; line-height: 1.3; }
+  h4 { font-size: 22px; font-weight: 500; line-height: 1.4; }
+  h5 { font-size: 18px; font-weight: 400; line-height: 1.5; }
+  h6 { font-size: 16px; font-weight: 400; line-height: 1.6; }
+}
+
+
+
+// Styles
+.App {
+  text-align: center;
+}
+
+html,body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+}
+.main-content{
+  min-height: 100vh;
+}
+.App-logo {
+  height: $logo-size;
+  pointer-events: none;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: $background-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-size-base;
+  color: $text-color;
+}
+
+.App-link {
+  color: $primary-color;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  font-size: $text-size;
+}
+
+.login-bg {
+  min-height: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+footer {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  width: 75%;
+}
+
+.link-color {
+  color: $link-color;
+}
+
+.btn-success {
+  background-color: $success-color; // Green for accept
+}
+
+.btn-error,.btn-error:hover {
+  background-color: $link-color; // Red for reject
+  color: #fff;
+}
+.text-wrap{
+  text-wrap-mode: wrap;
+}
+// General styling for the container
+.ht{
+  height: 200px;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $card-bg;
+}
+.login-container .logo{
+  height: auto;
+}
+
+// Styling for the login/register box
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 90%;
+  border: 1px solid $border-color;
+  margin: 30px 0;
+}
+
+// Title for the form
+.form-title {
+  font-size: 30px;
+  color: #000;
+}
+
+.form-sub-title {
+  font-size: 16px;
+  color: #475467;
+}
+
+// Input group wrapper
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+// Submit button
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: $primary-color;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+input:-internal-autofill-selected {
+  background-color: #fff !important;
+}
+
+// Message after form submission
+.form-message {
+  margin-top: 15px;
+  color: red;
+  font-size: 14px;
+}
+
+// Toggle between login/register form
+.toggle-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: $primary-color;
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:hover {
+    color: #0056b3;
+  }
+}
+
+
+
+.dashboard-container {
+  padding: 20px;
+}
+
+.top-picks-section, .chefs-around-section {
+  padding: 20px 0;
+}
+
+.product-list, .chef-list {
+  gap: 20px;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cart-controls span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity-controls button {
+  width: 30px;
+  height: 30px;
+  line-height: 1;
+}
+
+.subtotal {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.b-0{
+  border: $null;
+}
+.link-color{
+  color:$link-color;}
+//Dropdown
+select.form-control{
+  background: url("assets/images/chevron-down.svg") no-repeat right 1rem center/20px 20px;
+  font-size: 14px;
+}
+.form-control{
+  font-size: 14px !important;
+  min-height: 44px;
+}
+.form-check-input:checked,.form-check-input:active,.form-check-input:focus{
+  background-color:#F9F5FF;
+  border-color:$primary-color;
+}
+.form-check-input:checked[type=checkbox]{
+  background-image: url("assets/images/check.svg");
+}
+// Responsive Typography
+@media (max-width: 1200px) {
+  .login-box{
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 22px; }
+  h4 { font-size: 20px; }
+  h5 { font-size: 16px; }
+  h6 { font-size: 14px; }
+  .login-container{
+    align-items: flex-start;
+    background-color: $card-bg;
+  }
+  .login-box{
+    width: 100%;
+    margin-top: 2em;
+  }
+}
+div#root{
+  position: relative;
+}
+footer{
+  padding: 50px;
+}
+.tab-selector {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0;
+  border-bottom: 2px solid $link-color;
+
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: color 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-color;
+      text-decoration: none !important;
+    }
+
+    &.active {
+      color: $link-color;
+      border-bottom: 3px solid $link-color;
+      text-decoration: none;
+    }
+  }
+}

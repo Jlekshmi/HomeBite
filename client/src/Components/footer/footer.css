@@ -1,0 +1,30 @@
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    margin-top: 200px;
+  }
+  
+  footer h5 {
+    font-weight: bold;
+  }
+  
+  footer ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  

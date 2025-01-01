@@ -1,0 +1,25 @@
+// src/components/Button/input.scss
+@import '../../App.scss';
+.input-field {
+  border: none;
+  padding: 0;
+  .form-label{
+    font-size: 14px;
+  }
+    input {
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+      padding: 10px 14px;
+      &:focus {
+        border-color: #FF8A00;
+        outline: none;
+        box-shadow: 0 0 0 .25rem rgba(255, 138, 0,.25);
+      }
+      &:disabled{
+        opacity: 0.75;
+      }
+    }
+  }
+  
+  

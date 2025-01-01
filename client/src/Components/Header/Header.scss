@@ -1,0 +1,49 @@
+@import '../../App.scss';
+.custom-dropdown .dropdown-toggle::after {
+    display: none; /* Hides the default caret */
+  }
+  .navbar {
+    width: 100%;
+  }
+  
+  .role-navbar {
+    background-color: #f8f9fa;
+    padding: 0.5rem 0;
+  }
+  
+  .nav-link {
+    color: #000;
+    &:hover {
+      color: #007bff;
+    }
+  }
+  .cart-icon{
+    line-height: 32px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .badge{
+    top: -6px;
+    right: -10px;
+  }
+  .logo{
+    height: 16px;
+  }
+   .btn-link,  .btn-link .material-icons{
+    color: $text-color;
+  }
+   .btn-link.active,   .btn-link.active .material-icons ,  .btn-link:hover, .nav-link:hover,.cart-icon:hover .btn-link,.cart-icon:hover .header-icon,.nav-link:hover,  .navbar-nav .nav-link.active,  .btn-link .active,.loggedin {
+    color: $link-color;
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+  .header-icon{
+    margin-top: -3px;
+    margin-right: 5px;
+  }
+  .header-icon .material-icons{
+    font-size: 18px;
+  }
+  .flex-none{
+    flex: none;
+  }

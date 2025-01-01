@@ -1,0 +1,249 @@
+/* Global Imports */
+@import '../../App.scss';
+
+/* Dashboard Page */
+.dashboard-container {
+  display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  max-width: 200px;
+  min-height: 100vh;
+  border-right: 1px solid $border-color;
+
+  nav {
+    .btn-link {
+      color: $text-color;
+
+      &:hover {
+        text-decoration: none;
+        color: $btn-link-color;
+      }
+    }
+
+    .btn-link.active {
+      color: $link-color;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 1em;
+
+        a {
+          background: none;
+          border: none;
+          color: $text-color;
+          font-size: $btn-link-font-size;
+          text-decoration: none;
+          cursor: pointer;
+
+          .material-icons {
+            vertical-align: middle;
+            font-size: 16px;
+            margin-right: 0.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Material Icons */
+.material-icons {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+/* Chef Page */
+.chef-page {
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .tab-selector {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0;
+    border-bottom: 2px solid $link-color;
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #666;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      transition: color 0.3s ease;
+      text-decoration: none;
+
+      &:hover {
+        color: $link-color;
+        text-decoration: none !important;
+      }
+
+      &.active {
+        color: $link-color;
+        border-bottom: 3px solid $link-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .table-header {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #666;
+    text-align: left;
+    border-bottom: 2px solid $link-color;
+  }
+
+  .table-row {
+    border-bottom: 1px solid #ddd;
+
+    &:hover {
+      background-color: #f3faf3;
+    }
+  }
+
+  .table-cell {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    border-right: 1px solid #ddd;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  .order-details,
+  .customer-details,
+  .payment-details,
+  .item-details {
+    font-size: 14px;
+    color: #333;
+
+    p {
+      margin: 3px 0;
+    }
+  }
+
+  .order-details .order-id {
+    font-weight: bold;
+  }
+
+  .order-details .order-time {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .cheftable {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Orders Section */
+.orders-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 80px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #C1C7CD;
+}
+
+
+/* Buttons Section */
+.action-buttons {
+  .accept-button,
+  .reject-button {
+    padding: 10px 16px;
+   
+    font-weight: 700;
+    font-size: 16px;
+    color: $link-color;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+/* Footer Section */
+.footer {
+  width: 100%;
+  padding: 48px 80px;
+  background: #0F161E;
+  color: #FFFFFF;
+  text-align: center;
+ 
+  font-size: 16px;
+}
+
+/* Reusable Styles */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .orders-table {
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .sidebar {
+    max-width: 100%;
+    border: none;
+    min-height: auto;
+  }
+  .chef-page .tab-selector .tab{
+    padding: 10px;
+  }
+}
+
+/* Profile Section */
+.profile-img {
+  width: 150px;
+  border-radius: 100% !important;
+  height: 150px;
+  object-fit: cover;
+}
+.order-card{
+  .text-bg-light{
+    background-color: #F2F4F7 !important;
+    color: #475467 !important;
+  }
+}
