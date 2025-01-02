@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
   res.send("Backend is running");
 });
 // Connect to MongoDB  
-mongoose.connect('mongodb+srv://HomeBite:Homebite123@homebite.1dasn.mongodb.net/HomeBite?retryWrites=true&w=majority', {
+mongoose.connect('<your-mongodb-connection-string>', {
 
   useNewUrlParser: true,
   useUnifiedTopology: true,
